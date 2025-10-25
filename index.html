@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladataim</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #6c757d;
+            font-weight: 400;
+        }
+
+        .assignment-card {
+            background: white;
+            border-radius: 12px;
+            padding: 35px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-left: 4px solid #4a90e2;
+            transition: all 0.3s ease;
+        }
+
+        .assignment-card:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            transform: translateY(-2px);
+        }
+
+        .assignment-header {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .assignment-number {
+            display: inline-block;
+            background: #4a90e2;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .assignment-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            color: #495057;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .section-content {
+            color: #6c757d;
+            line-height: 1.7;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .file-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .file-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #4a90e2;
+            font-weight: 500;
+            border: 2px solid #e9ecef;
+            transition: all 0.2s ease;
+        }
+
+        .file-link:hover {
+            border-color: #4a90e2;
+            background: #f0f7ff;
+            transform: translateY(-1px);
+        }
+
+        .file-icon {
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .assignment-card {
+                padding: 25px;
+            }
+
+            .assignment-title {
+                font-size: 1.5rem;
+            }
+
+            .file-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Rácz Dorina - WM5GPK</h1>
+        <p class="subtitle">Algoritmusok és adatszerkezetek a gyakorlatban — 3. Félév</p>
+    </header>
+
+    <div class="assignments">
+        <div class="assignment-card">
+            <div class="assignment-header">
+                <div class="assignment-number">1. Feladat - közepes nehezség</div>
+                <h2 class="assignment-title">Dice Combinations</h2>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Feladatleírás</h3>
+                <div class="section-content">
+                    <p style="margin-bottom: 10px;">A feladat az, hogy megszámoljuk, hányféleképpen lehet az n összeget előállítani egy vagy több kockadobással. Minden dobás eredménye 1 és 6 közötti szám lehet.</p>
+                    <a href="https://cses.fi/problemset/task/1633" class="file-link" target="_blank" rel="noopener noreferrer">
+                        <span class="file-icon">🔗</span>
+                        Feladat linkje
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Megoldás</h3>
+                <div class="section-content">
+                    <a href="megoldasok/dice_combinations.py" class="file-link" download>
+                        <span class="file-icon">🐍</span>
+                        megoldas.py
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="assignment-card">
+            <div class="assignment-header">
+                <div class="assignment-number">2. Feladat</div>
+                <h2 class="assignment-title">Feladat címe</h2>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Feladatleírás</h3>
+                <div class="section-content">
+                    <p style="margin-bottom: 10px;">Itt jön a feladat részletes leírása. Mit kell elkészíteni, milyen követelményeknek kell megfelelni, stb.</p>
+                    <a href="#" class="file-link" target="_blank" rel="noopener noreferrer">
+                        <span class="file-icon">🔗</span>
+                        Feladat linkje
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Megoldás</h3>
+                <div class="section-content">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="assignment-card">
+            <div class="assignment-header">
+                <div class="assignment-number">3. Feladat</div>
+                <h2 class="assignment-title">Feladat címe</h2>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Feladatleírás</h3>
+                <div class="section-content">
+                    <p style="margin-bottom: 10px;">Itt jön a feladat részletes leírása. Mit kell elkészíteni, milyen követelményeknek kell megfelelni, stb.</p>
+                    <a href="#" class="file-link" target="_blank" rel="noopener noreferrer">
+                        <span class="file-icon">🔗</span>
+                        Feladat linkje
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Megoldás</h3>
+                <div class="section-content">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="assignment-card">
+            <div class="assignment-header">
+                <div class="assignment-number">4. Feladat</div>
+                <h2 class="assignment-title">Feladat címe</h2>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Feladatleírás</h3>
+                <div class="section-content">
+                    <p style="margin-bottom: 10px;">Itt jön a feladat részletes leírása. Mit kell elkészíteni, milyen követelményeknek kell megfelelni, stb.</p>
+                    <a href="#" class="file-link" target="_blank" rel="noopener noreferrer">
+                        <span class="file-icon">🔗</span>
+                        Feladat linkje
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Megoldás</h3>
+                <div class="section-content">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="assignment-card">
+            <div class="assignment-header">
+                <div class="assignment-number">5. Feladat</div>
+                <h2 class="assignment-title">Feladat címe</h2>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Feladatleírás</h3>
+                <div class="section-content">
+                    <p style="margin-bottom: 10px;">Itt jön a feladat részletes leírása. Mit kell elkészíteni, milyen követelményeknek kell megfelelni, stb.</p>
+                    <a href="#" class="file-link" target="_blank" rel="noopener noreferrer">
+                        <span class="file-icon">🔗</span>
+                        Feladat linkje
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Megoldás</h3>
+                <div class="section-content">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
