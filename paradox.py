@@ -1,5 +1,4 @@
 import sys
-sys.setrecursionlimit(200000)
 
 def read_input():
     try:
